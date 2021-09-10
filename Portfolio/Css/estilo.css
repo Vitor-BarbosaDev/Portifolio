@@ -1,0 +1,2502 @@
+@media (min-width: 1200px) {
+	body, html {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font: 16px 'Montserrat', sans-serif;
+	color: #000;
+	scroll-behavior: smooth;
+	
+}
+
+h1, h2, h3 {
+	color: #EF4C4C;
+}
+
+
+/*Topo*/
+
+header {
+	margin: 0 auto;
+	position: fixed;
+	opacity: .80;
+	z-index: 1;
+	background-color: #212121;
+	color: #fff;
+	width: 100%;
+	height: 80px;
+}
+
+#logo {
+	padding-left: 40px;
+	float: left;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	margin: 30px;
+	margin-right: 40px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-right: 5px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 7px 5px;
+	border-radius: 3px;
+
+}
+
+a.active,  nav a:hover {
+	background-color: #000;
+	transition: .5s;
+
+}
+
+#bt_menu {
+	display: none;
+
+}
+label[for="bt_menu"] {
+	display: none;
+	float: right;
+	font-size: 30px;
+	cursor: pointer;
+	line-height: 80px;
+	margin-right: 40px;
+}
+
+/*Fim Topo*/
+
+/*Área Destaque*/
+#area-destaque {
+	width: 100%;
+	height: 100%;
+	background-image: url(../Img/fundo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+.sobreposicao {
+	width: 100%;
+	height: 100%;
+	background-color: #151515;
+	opacity: .80;	 	
+}
+
+.titulo {
+	position: absolute;
+	color: #fff;
+	padding: 100px 0 0 70px;
+	line-height: 50px;
+}
+
+.titulo h1 {
+	font-size: 90px;
+	color: #fff;
+}
+
+.titulo h2 {
+	font-size: 50px;
+	color: #fff;
+}
+
+.titulo h3 {
+	font-size: 50px;
+	color: #EF4C4C;
+}
+
+.titulo h3::after {
+	content: '|';
+	
+	animation: pisca .7s infinite;
+
+}
+
+@keyframes pisca {
+	0%, 100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+
+.botaoDestaque {
+	text-decoration: none;
+	position: absolute;
+	margin-top: 490px;
+	margin-left: 90px;
+	background-color: #EF4C4C;
+	border-radius: 7px;
+	border: none;
+	padding: 10px 30px;
+	color: #fff; 
+}
+
+/*Inicio Introdução*/
+
+p {
+	line-height: 24px;
+}
+
+#containerIntro {
+	max-width: 100%;
+	height: 550px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../Img/funtointroducao.png);
+}
+
+.introducao {
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.textoIntro {
+	width: 540px; 
+	height: 410px;
+	float:left;
+	padding-top: 100px;
+
+}
+
+.textoIntro h1 {
+	padding-top: 40px;
+	text-align: center;
+}
+
+.textoIntro p {
+	text-align: center;
+}
+
+.imgIntro {
+	float: right;
+	margin-right: 30px;
+
+}
+
+/*Incio Serviços*/
+
+#containerServicos {
+	clear: both;
+	width: 100%;
+	height: 900px;
+	background-color: #151515;
+	opacity: 0.85;
+}
+
+.servicos {
+	width: 1150px;
+	padding-top: 30px;
+	margin: 0 auto;	
+	
+}
+
+.servicos article {
+	margin: 0 0 10px 10px;
+	float: left;
+	width: 370px;
+	height: 235px;
+	border: 1px solid #dccfec;
+	border-radius: 8px;
+	background-color: #fff; 
+}
+
+.servicos h2 {
+	text-align: center;
+	line-height: 0.5;
+}
+
+.servicos h1 {
+	color: #fff;
+	text-align: center;
+	padding-bottom: 20px;
+	
+}
+
+.servicos img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicos p {
+	text-align: center;
+	padding: 0 10px 0 10px;
+}
+
+
+/*Inicio sobre*/
+
+#containerSobre {
+	clear: both;
+}
+
+.sobre {
+	width: 1200px;
+	height: 550px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.sobre h1 {
+	text-align: center;
+	line-height: 1;
+	padding-top: 10px;
+}
+
+.imgSobre {
+	float: left;
+	margin-left: 50px;
+	
+	
+}
+
+.textoSobre {
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 700px;
+	height: 250px;
+	text-align: justify;
+	text-indent: 15px;
+	
+}
+
+/*listas Habilidades*/
+
+.textoHabilidades {
+	float: right;
+	margin-right: 20px;
+	width: 700px;
+}
+
+ .textoHabilidades ul {
+ 	float: left;
+ }
+
+.textoHabilidades ul li {
+	background-image: url(../Img/check.png);
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	padding-bottom: 15px;
+	display: block;
+	list-style: none;
+}
+
+.textoHabilidades h2 {
+	text-align: center;
+}
+
+/*Area como eu trabalho*/
+#containerTrabalho {
+	clear: both;
+	height: 950px;
+	border-top: 1px solid #dccfec;
+}
+
+.conteudoTrabalho {
+	width: 1230px;
+	margin: 0 auto;
+	padding-top: 30px;
+
+}
+
+.conteudoTrabalho h1 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.conteudoTrabalho h3 {
+	text-align: center;
+}
+
+.conteudoTrabalho article {
+	display: inline;
+	width: 280px;
+	height: 280px;
+	border: 1px solid #dccfec;
+	background-color: #F7F7F7;
+	border-radius: 8px;
+	padding: 5px;
+	margin-left: 10px;
+	float: left;
+}
+
+
+.conteudoTrabalho article p {
+	font-size: 15px;
+	text-align: justify;
+	text-indent: 15px;
+	padding: 0 10px 0 10px;
+}
+
+.convercao{
+	clear: both;
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 900px;
+}
+
+.convercao h3 {
+	margin-top: 40px;
+	margin-left: 260px;
+}
+
+.convercao p {
+	text-align: center;
+	margin-left: 240px;
+}
+
+/*caixa de vantagens*/
+
+.empresaMapa, .garantia {
+	width: 360px;
+	height: 230px;
+	border: 1px solid #dccfec;
+	background-color: #F7F7F7;
+	border-radius: 17px;
+	margin-top: 40px;
+	padding: 20px;
+
+}
+
+.empresaMapa, .garantia p {
+	text-align: center;
+}
+
+.empresaMapa {
+	margin-left: 200px;
+	float: left;
+}
+
+.empresaMapa img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.garantia {
+	margin-right: 200px;
+	float: right;
+}
+
+.pgarantia {
+	color: #EF4C4C;
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 34px;
+	text-align: center;
+}
+
+.asterisco {
+	font-size: 13px; 
+}
+
+/*Contato */
+
+#containerContato {
+	border-top: 1px solid #dccfec;
+}
+
+.conteudoContato {
+	width: 1230px;
+	height: 270px;
+	margin: 0 auto;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.conteudoContato h1 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.email {
+	text-decoration: none;
+	color: #6666ff;
+	font-size: 18px;
+}
+
+.conteudoContato a {
+	background-color: #00b300;
+	border-radius: 7px;
+	border: none;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/*Botão de ir ao topo*/
+#btnTopo {
+	position: fixed;
+	display: none;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #555555;
+    border: none;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#btnTopo::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    transition: margin-top 250ms;
+}
+
+#btnTopo:hover::after {
+    margin-top:-8px;
+}
+
+
+/*Rodapé*/
+
+#rodape {
+	clear: both;
+	background-color: #151515;
+	opacity: 0.85;
+	height: 100px;
+}
+
+#rodape p {
+	color: #8F8F8F;
+	padding-top: 70px;
+	text-align: center;
+}
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+body, html {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font: 16px 'Montserrat', sans-serif;
+	color: #000;
+	scroll-behavior: smooth;
+	
+}
+
+h1, h2, h3 {
+	color: #EF4C4C;
+}
+
+/*Topo*/
+
+ header {
+	margin: 0 auto;
+	position: fixed;
+	opacity: .80;
+	z-index: 1;
+	background-color: #212121;
+	color: #fff;
+	width: 100%;
+	height: 80px;
+}
+
+#logo {
+	padding-left: 40px;
+	float: left;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	margin: 30px;
+	margin-right: 40px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-right: 5px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 7px 5px;
+	border-radius: 3px;
+
+}
+
+a.active,  nav a:hover {
+	background-color: #000;
+	transition: .5s;
+
+}
+
+#bt_menu {
+	display: none;
+
+}
+label[for="bt_menu"] {
+	display: none;
+	float: right;
+	font-size: 30px;
+	cursor: pointer;
+	line-height: 80px;
+	margin-right: 40px;
+}
+
+/*Fim Topo*/
+
+/*Área Destaque*/
+#area-destaque {
+	width: 100%;
+	height: 100%;
+	background-image: url(../Img/fundo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+.sobreposicao {
+	width: 100%;
+	height: 100%;
+	background-color: #151515;
+	opacity: .80;	 	
+}
+
+.titulo {
+	position: absolute;
+	color: #fff;
+	padding: 90px 0 0 70px;
+	line-height: 40px;
+}
+
+.titulo h1 {
+	font-size: 70px;
+	color: #fff;
+}
+
+.titulo h2 {
+	font-size: 50px;
+	color: #fff;
+}
+
+.titulo h3 {
+	font-size: 50px;
+	color: #EF4C4C;
+}
+
+.titulo h3::after {
+	content: '|';
+	
+	animation: pisca .7s infinite;
+
+}
+
+@keyframes pisca {
+	0%, 100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+
+.botaoDestaque {
+	text-decoration: none;
+	position: absolute;
+	margin-top: 420px;
+	margin-left: 70px;
+	background-color: #EF4C4C;
+	border-radius: 7px;
+	border: none;
+	padding: 10px 30px;
+	color: #fff; 
+}
+
+/*Inicio Introdução*/
+
+p {
+	line-height: 24px;
+}
+
+#containerIntro {
+	width: 100%;
+	height: 550px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../Img/funtointroducao.png);
+}
+
+.introducao {
+	width: 840px;
+	margin: 0 auto;
+}
+
+.textoIntro {
+	width: 360px; 
+	height: 320px;
+	float:left;
+	padding-top: 30px;
+
+}
+
+.textoIntro h1 {
+	padding-top: 40px;
+	text-align: center;
+}
+
+.textoIntro p {
+	text-align: center;
+}
+
+.imgIntro {
+	width: 250px;
+	height: 250px;
+	float: right;
+	margin-right: 200px;
+
+}
+
+/*Incio Serviços*/
+
+#containerServicos {
+	clear: both;
+	width: 100%;
+	height: 1100px;
+	background-color: #151515;
+	opacity: 0.85;
+}
+
+.servicos {
+	width: 930px;
+	padding-top: 20px;
+	margin: 0 auto;	
+	
+}
+
+.servicos article {
+	margin: 0 0 10px 10px;
+	float: left;
+	width: 290px;
+	height: 300px;
+	border: 1px solid #dccfec;
+	border-radius: 8px;
+	background-color: #fff; 
+}
+
+.servicos h2 {
+	text-align: center;
+	
+}
+
+.servicos h1 {
+	color: #fff;
+	text-align: center;
+	padding-bottom: 10px;
+	
+}
+
+.servicos img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicos p {
+	text-align: center;
+	padding: 0 15px 0 15px;
+}
+
+
+/*Inicio sobre*/
+
+#containerSobre {
+	clear: both;
+}
+
+.sobre {
+	width: 920px;
+	height: 550px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.sobre h1 {
+	text-align: center;
+	line-height: 1;
+	
+	padding-bottom: 10px;
+}
+
+.imgSobre {
+	margin: 0 auto;
+	width: 302px; 
+	height: 308px;
+}
+
+.imgSobre img {
+	margin: 0 auto;
+	width: 302px;
+	height: 308px;
+}
+
+.textoSobre {
+	text-indent: 15px;
+	text-align: justify;
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 700px;
+	height: 250px;
+	
+}
+
+/*listas Habilidades*/
+
+.textoHabilidades {
+	margin: 0 auto;
+	width: 700px;
+}
+
+ .textoHabilidades ul {
+ 	float: left;
+ }
+
+.textoHabilidades ul li {
+	background-image: url(../Img/check.png);
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	padding-bottom: 15px;
+	display: block;
+	list-style: none;
+}
+
+.textoHabilidades h2 {
+	text-align: center;
+}
+
+/*Area como eu trabalho*/
+#containerTrabalho {
+	clear: both;
+	height: 870px;
+	border-top: 1px solid #dccfec;
+}
+
+.conteudoTrabalho {
+	width: 920px;
+	margin: 0 auto;
+	padding-top: 10px;
+
+}
+
+.conteudoTrabalho h1 {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.conteudoTrabalho h3 {
+	text-align: center;
+}
+
+.conteudoTrabalho article {
+	display: inline;
+	width: 280px;
+	height: 260px;
+	border: 1px solid #dccfec;
+	background-color: #F7F7F7;
+	border-radius: 8px;
+	padding: 5px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+
+.conteudoTrabalho article p {
+	font-size: 15px;
+	padding: 0 10px 0 10px;
+	text-indent: 15px;
+}
+
+.convercao {
+	clear: both;
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 900px;
+}
+
+.convercao p {
+	text-align: center;
+}
+/*caixa de vantagens*/
+
+.empresaMapa, .garantia {
+	width: 390px;
+	height: 250px;
+	border: 1px solid #dccfec;
+	background-color: #F7F7F7;
+	border-radius: 17px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	padding: 30px;
+
+}
+
+.empresaMapa, .garantia p {
+	text-align: center;
+}	
+
+.empresaMapa {
+	float: left;
+}
+
+.empresaMapa img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.garantia {
+	float: right;
+}
+
+.pgarantia {
+	color: #EF4C4C;
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 34px;
+	text-align: center;
+}
+
+.asterisco {
+	font-size: 13px; 
+}
+
+/*Contato */
+
+#containerContato {
+	clear: both;
+	border-top: 1px solid #dccfec;
+}
+
+.conteudoContato {
+	width: 920px;
+	height: 240px;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.conteudoContato h1 {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.email {
+	text-decoration: none;
+	color: #6666ff;
+	font-size: 18px;
+}
+
+.conteudoContato a {
+	background-color: #00b300;
+	border-radius: 7px;
+	border: none;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/*Botão de ir ao topo*/
+#btnTopo {
+	position: fixed;
+	display: none;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #555555;
+    border: none;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#btnTopo::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    transition: margin-top 250ms;
+}
+
+#btnTopo:hover::after {
+    margin-top:-8px;
+}
+
+
+/*Rodapé*/
+
+#rodape {
+	clear: both;
+	background-color: #151515;
+	opacity: 0.85;
+	height: 100px;
+}
+
+#rodape p {
+	color: #8F8F8F;
+	padding-top: 70px;
+	text-align: center;
+}
+
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+body, html {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font: 16px 'Montserrat', sans-serif;
+	color: #000;
+	scroll-behavior: smooth;
+	
+}
+
+h1, h2, h3 {
+	color: #EF4C4C;
+}
+
+/*Topo*/
+
+ header {
+	margin: 0 auto;
+	position: fixed;
+	opacity: .80;
+	z-index: 1;
+	background-color: #212121;
+	color: #fff;
+	width: 100%;
+	height: 80px;
+}
+
+#logo {
+	padding-left: 40px;
+	float: left;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	margin: 30px;
+	margin-right: 30px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-right: 5px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	padding: 7px 5px;
+	border-radius: 3px;
+
+}
+
+a.active, nav a:hover {
+	background-color: #000;
+	transition: .5s;
+
+}
+
+#bt_menu {
+	display: none;
+
+}
+label[for="bt_menu"] {
+	display: none;
+	float: right;
+	font-size: 30px;
+	cursor: pointer;
+	line-height: 80px;
+	margin-right: 40px;
+}
+
+/*Fim Topo*/
+
+/*Área Destaque*/
+#area-destaque {
+	width: 100%;
+	height: 100%;
+	background-image: url(../Img/fundo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+.sobreposicao {
+	width: 100%;
+	height: 100%;
+	background-color: #151515;
+	opacity: .80;	 	
+}
+
+.titulo {
+	position: absolute;
+	color: #fff;
+	padding-top: 80px;
+	padding-left: 20px;
+	line-height: 40px;
+}
+
+.titulo h1 {
+	font-size: 60px;
+	color: #fff;
+}
+
+.titulo h2 {
+	font-size: 40px;
+	color: #fff;
+}
+
+.titulo h3 {
+	font-size:40px;
+	line-height: 40px;
+	color: #EF4C4C;
+}
+
+.titulo h3::after {
+	content: '|';
+	
+	animation: pisca .7s infinite;
+
+}
+
+@keyframes pisca {
+	0%, 100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+
+.botaoDestaque {
+	text-decoration: none;
+	position: absolute;
+	margin-top: 400px;
+	margin-left: 30px;
+	background-color: #EF4C4C;
+	border-radius: 7px;
+	border: none;
+	padding: 10px 30px;
+	color: #fff; 
+}
+
+/*Inicio Introdução*/
+
+p {
+	line-height: 24px;
+}
+
+#containerIntro {
+	width: 100%;
+	height: 750px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../Img/funtointroducao.png);
+}
+
+.introducao {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.textoIntro {
+	text-align: center;
+	width: 560px; 
+	height: 290px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.textoIntro h1 {
+	text-align: center;
+}
+
+.textoIntro p {
+	text-align: center;
+}
+
+.imgIntro {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.imgIntro img {
+	width: 400px;
+	height: 400px;
+}
+
+/*Incio Serviços*/
+
+#containerServicos {
+	clear: both;
+	width: 100%;
+	height: 1670px;	
+	background-color: #151515;
+	opacity: 0.85;
+}
+
+.servicos {
+	width: 700px;
+	height: 1670px;	
+	margin: 0 auto;
+}
+
+.servicos article {
+	margin-left: 37px;
+	margin-bottom: 15px;
+	float: left;
+	width: 290px;
+	height: 300px;
+	border: 1px solid #dccfec;
+	border-radius: 8px;
+	background-color: #fff; 
+}
+
+.servicos h2 {
+	text-align: center;
+	
+}
+
+.servicos h1 {
+	color: #fff;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	
+}
+
+.servicos img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicos p {
+	text-align: center;
+	padding: 0 15px 0 15px;
+}
+
+
+/*Inicio sobre*/
+
+#containerSobre {
+	clear: both;
+}
+
+.sobre {
+	width: 700px;
+	height: 550px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.sobre h1 {
+	text-align: center;
+	line-height: 1;
+	
+	padding-bottom: 10px;
+}
+
+.imgSobre {
+	margin: 0 auto;
+	width: 302px; 
+	height: 308px;
+}
+
+.imgSobre img {
+	margin: 0 auto;
+	width: 302px;
+	height: 308px;
+}
+
+.textoSobre {
+	text-indent: 20px;
+	padding-top: 10px;
+	text-align: justify;
+	margin: 0 auto;
+	width: 700px;
+	height: 250px;
+	
+}
+
+/*listas Habilidades*/
+
+.textoHabilidades {
+	margin: 0 auto;
+	width: 700px;
+}
+
+ .textoHabilidades ul {
+ 	float: left;
+ }
+
+.textoHabilidades ul li {
+	background-image: url(../Img/check.png);
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	padding-bottom: 15px;
+	display: block;
+	list-style: none;
+}
+
+.textoHabilidades h2 {
+	text-align: center;
+}
+
+/*Area como eu trabalho*/
+#containerTrabalho {
+	clear: both;
+	height: 1490px;
+	border-top: 1px solid #dccfec;
+}
+
+.conteudoTrabalho {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10px;
+
+}
+
+.conteudoTrabalho h1 {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.conteudoTrabalho article {
+	display: inline;
+	width: 280px;
+	height: 260px;
+	border: 1px solid #dccfec;
+	background-color: #F7F7F7;
+	border-radius: 8px;
+	padding: 5px;
+	margin: 20px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+
+.conteudoTrabalho article p {
+	font-size: 15px;
+	padding: 0 15px 0 15px;
+	text-align: justify;
+	text-indent: 15px;
+}
+
+.convercao {
+	clear: both;
+	padding-top: 20px;
+	padding-left: 20px;
+	width: 700px;
+}
+
+.convercao p {
+	text-align: center;
+}
+/*caixa de vantagens*/
+
+.empresaMapa, .garantia {
+	width: 380px;
+	height: 230px;
+	border: 1px solid #dccfec;
+	background-color: #F7F7F7;
+	border-radius: 17px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 30px;
+
+}
+
+.empresaMapa, .garantia p {
+	text-align: center;
+}
+
+.empresaMapa img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pgarantia {
+	color: #EF4C4C;
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 34px;
+	text-align: center;
+}
+
+.asterisco {
+	font-size: 13px; 
+}
+
+/*Contato */
+
+#containerContato {
+	clear: both;
+	border-top: 1px solid #dccfec;
+}
+
+.conteudoContato {
+	width: 700px;
+	height: 240px;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.conteudoContato h1 {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.email {
+	text-decoration: none;
+	color: #6666ff;
+	font-size: 18px;
+}
+
+.conteudoContato a {
+	background-color: #00b300;
+	border-radius: 7px;
+	border: none;
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/*Botão de ir ao topo*/
+#btnTopo {
+	position: fixed;
+	display: none;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #555555;
+    border: none;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#btnTopo::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    transition: margin-top 250ms;
+}
+
+#btnTopo:hover::after {
+    margin-top:-8px;
+}
+
+
+/*Rodapé*/
+
+#rodape {
+	clear: both;
+	background-color: #151515;
+	opacity: 0.85;
+	height: 100px;
+}
+
+#rodape p {
+	color: #8F8F8F;
+	padding-top: 70px;
+	text-align: center;
+}
+
+ }
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+	body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font: 16px 'Montserrat', sans-serif;
+	color: #000;
+	scroll-behavior: smooth;
+	
+}
+
+h1, h2, h3 {
+	color: #EF4C4C;
+}
+
+/*Topo*/
+
+  header {
+ 	width: 100%;
+	height: 80px;
+	display: inline;
+	position: fixed;
+	opacity: .80;
+	z-index: 1;
+	background-color: #212121;
+	color: #fff;
+	
+}
+
+#logo {
+	width: 164px;
+	height: 64px;
+	padding-left: 20px;
+	float: left;
+}
+
+/*Botão menu*/
+
+#bt_menu {
+	display: none;
+
+}
+label[for="bt_menu"] {
+	display: block;
+	float: right;
+	font-size: 30px;
+	cursor: pointer;
+	line-height: 80px;
+	margin-right: 40px;
+}
+
+nav {
+ 	position: fixed;
+ 	width: 100%;
+ 	height: 250px;
+	text-align: center;
+	background-color: #212121;
+	top: 60px;
+	left: -100%;
+	transition: all .5s;
+
+}
+
+#bt_menu:checked ~ nav {
+	left: 0;
+}
+
+nav ul {
+	text-align: center;
+ 	margin-right: 10%;
+	font-size: 14px;
+	list-style: none;
+
+}
+
+nav ul li {
+	display: block;
+ 	margin: 0 auto;
+ 	padding-top: 10px;
+ 	line-height: 20px;
+ 	border-bottom: 1px solid #fff;
+}
+
+nav ul li a {
+	padding-bottom: 10px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+/*Fim Topo*/
+
+/*Área Destaque*/
+#area-destaque {
+	width: 100%;
+	height: 100%;
+	background-image: url(../Img/fundo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+
+}
+.sobreposicao {
+	width: 100%;
+	height: 100%;
+	background-color: #151515;
+	opacity: .80;	 	
+}
+
+.titulo {
+	display: inline;
+	width: 100%;
+	position: absolute;
+	margin-top: 100px;
+	color: #fff;
+
+	
+}
+
+.titulo h1 {
+	padding: 0 15px 0 30px;
+	font-size: 40px;
+	color: #fff;
+}
+
+.titulo h2 {
+	padding: 0 15px 0 30px;
+	font-size: 30px;
+	color: #fff;
+	
+}
+
+.titulo h3 {
+	padding: 0 15px 0 30px;
+	font-size: 25px;
+	color: #EF4C4C;
+}
+
+.titulo h3::after {
+	content: '|';
+	animation: pisca .7s infinite;
+
+}
+
+@keyframes pisca {
+	0%, 100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+
+.botaoDestaque {
+	text-decoration: none;
+	position: absolute;
+	margin-top: 350px;
+	margin-left: 45px;
+	background-color: #EF4C4C;
+	border-radius: 7px;
+	border: none;
+	padding: 10px 30px;
+	color: #fff; 
+}
+
+/*Inicio Introdução*/
+
+p {
+	line-height: 20px;
+}
+
+#containerIntro {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../Img/funtointroducao.png);
+}
+
+.introducao {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.textoIntro {
+	text-align: center;
+	width: 100%; 
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.textoIntro h1 {
+	text-align: center;
+}
+
+.textoIntro p {
+	text-align: center;
+	padding: 0 15px 0 15px;
+}
+
+.imgIntro {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.imgIntro img {
+	width: 300px;
+	height: 300px;
+}
+
+/*Incio Serviços*/
+
+#containerServicos {
+	width: 100%;
+	height: 1620px;
+	margin-top: -20px;
+	background-color: #151515;
+	opacity: 0.85;
+}
+
+.servicos {
+	width: 576px;
+	height: 1620px;
+	margin: 0 auto;	
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.servicos article {
+	float: left;
+	width: 270px;
+	height: 280px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #dccfec;
+	border-radius: 8px;
+	background-color: #fff; 
+}
+
+.servicos h2 {
+	text-align: center;
+	line-height: 25px;
+	
+}
+
+.servicos h1 {
+	color: #fff;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	
+}
+
+.servicos img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicos p {
+	text-align: center;
+	padding:  0 20px 0 20px;
+}
+
+
+/*Inicio sobre*/
+
+#containerSobre {
+	clear: both;
+	width: 100%;
+	
+}
+
+.sobre {
+	width: 100%;
+	padding-top: 20px;
+}
+
+.sobre h1 {
+	text-align: center;
+	line-height: 1;
+	padding-bottom: 10px;
+}
+
+.imgSobre {
+	text-align: center;
+	
+}
+
+.imgSobre img {
+	width: 222px; 
+	height: 228px;
+}
+
+.textoSobre {
+	text-indent: 20px;
+	padding-top: 10px;
+	text-align: justify;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+/*listas Habilidades*/
+
+.textoHabilidades {
+	margin: 0 auto;
+	width: 100%;
+}
+
+ .textoHabilidades ul {
+ 	float: left;
+ }
+
+.textoHabilidades ul li {
+	background-image: url(../Img/check.png);
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	padding-bottom: 15px;
+	display: block;
+	list-style: none;
+}
+
+.textoHabilidades h2 {
+	text-align: center;
+}
+
+/*Area como eu trabalho*/
+#containerTrabalho {
+	width: 100%;
+	margin-top: -20px;
+	clear: both;
+	border-top: 1px solid #dccfec;
+}
+
+.conteudoTrabalho {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+
+
+}
+
+.conteudoTrabalho h1 {
+	text-align: center;
+
+	
+}
+
+.conteudoTrabalho article {
+	width: 400px;
+	height: 215px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding-top: 25px;
+	text-align: center;
+	border: 1px solid #dccfec;
+	background-color: #F7F7F7;
+	border-radius: 8px;
+
+}
+
+
+.conteudoTrabalho article p {
+	text-align: justify;
+	padding: 0 20px 0 20px;
+	text-indent: 15px;
+}
+
+
+.convercao {
+	width: 100%;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.convercao p {
+	text-align: center;
+	padding: 0 15px 0 15px;
+}
+
+/*caixa de vantagens*/
+
+.empresaMapa, .garantia {
+	width: 370px;
+	height: 250px;
+	text-align: center;
+	border: 1px solid #dccfec;
+	background-color: #F7F7F7;
+	border-radius: 17px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.empresaMapa, .garantia p {
+	padding: 0 15px 0 15px;
+	text-align: center;
+}
+
+.empresaMapa img {
+	display: block;
+	margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.garantia {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.pgarantia {
+	color: #EF4C4C;
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 34px;
+	text-align: center;
+}
+
+
+.asterisco {
+	font-size: 13px; 
+}
+
+/*Contato */
+
+#containerContato {
+	width: 100%;
+	border-top: 1px solid #dccfec;
+}
+
+.conteudoContato {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.conteudoContato p {
+	line-height: 30px;
+}
+
+.conteudoContato h1 {
+	text-align: center;
+}
+
+.email {
+	text-decoration: none;
+	color: #6666ff;
+	font-size: 18px;
+}
+
+.conteudoContato a {
+	background-color: #00b300;
+	border-radius: 7px;
+	border: none;
+	padding: 15px 15px;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/*Botão de ir ao topo*/
+#btnTopo {
+	position: fixed;
+	display: none;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #555555;
+    border: none;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#btnTopo::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    transition: margin-top 250ms;
+}
+
+#btnTopo:hover::after {
+    margin-top:-8px;
+}
+
+
+/*Rodapé*/
+
+#rodape {
+	width: 100%;
+	clear: both;
+	background-color: #151515;
+	opacity: 0.85;
+	
+}
+
+#rodape p {
+	color: #8F8F8F;
+	padding-top: 70px;
+	text-align: center;
+}
+
+
+}
+
+@media (max-width: 575.98px) {
+	body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font: 16px 'Montserrat', sans-serif;
+	color: #000;
+	scroll-behavior: smooth;
+	
+}
+
+h1, h2, h3 {
+	color: #EF4C4C;
+}
+
+/*Topo*/
+
+ header {
+ 	width: 100%;
+	height: 80px;
+	display: inline;
+	position: fixed;
+	opacity: .80;
+	z-index: 1;
+	background-color: #212121;
+	color: #fff;
+	
+}
+
+#logo {
+	width: 164px;
+	height: 64px;
+	padding-left: 20px;
+	float: left;
+}
+
+/*Botão menu*/
+
+#bt_menu {
+	display: none;
+
+}
+label[for="bt_menu"] {
+	display: block;
+	float: right;
+	font-size: 30px;
+	cursor: pointer;
+	line-height: 80px;
+	margin-right: 40px;
+}
+
+nav {
+ 	position: fixed;
+ 	width: 100%;
+ 	height: 250px;
+	text-align: center;
+	background-color: #212121;
+	top: 60px;
+	left: -100%;
+	transition: all .7s;
+
+}
+
+#bt_menu:checked ~ nav {
+	left: 0px;
+	transition: all .7s;
+}
+
+nav ul {
+	text-align: center;
+ 	margin-right: 10%;
+	font-size: 14px;
+	list-style: none;
+
+}
+
+nav ul li {
+	display: block;
+ 	margin: 0 auto;
+ 	padding-top: 10px;
+ 	line-height: 20px;
+ 	border-bottom: 1px solid #fff;
+}
+
+nav ul li a {
+	padding-bottom: 10px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+
+/*Fim Topo*/
+
+/*Área Destaque*/
+#area-destaque {
+	width: 100%;
+	height: 100%;
+	background-image: url(../Img/fundo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+
+}
+.sobreposicao {
+	width: 100%;
+	height: 100%;
+	background-color: #151515;
+	opacity: .80;	 	
+}
+
+.titulo {
+	display: inline;
+	width: 100%;
+	position: absolute;
+	margin-top: 130px;
+	color: #fff;
+
+	
+}
+
+.titulo h1 {
+	padding: 0 15px 0 15px;
+	font-size: 40px;
+	color: #fff;
+}
+
+.titulo h2 {
+	padding: 0 15px 0 15px;
+	font-size: 30px;
+	color: #fff;
+	
+}
+
+.titulo h3 {
+	padding: 0 15px 0 15px;
+	font-size: 25px;
+	color: #EF4C4C;
+}
+
+.titulo h3::after {
+	content: '|';
+	animation: pisca .7s infinite;
+
+}
+
+@keyframes pisca {
+	0%, 100% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+}
+
+.botaoDestaque {
+	text-decoration: none;
+	position: absolute;
+	margin-top: 410px;
+	margin-left: 45px;
+	background-color: #EF4C4C;
+	border-radius: 7px;
+	border: none;
+	padding: 10px 30px;
+	color: #fff; 
+}
+
+/*Inicio Introdução*/
+
+p {
+	line-height: 20px;
+}
+
+#containerIntro {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../Img/funtointroducao.png);
+}
+
+.introducao {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.textoIntro {
+	text-align: center;
+	width: 100%; 
+	margin: 0 auto;
+	padding-top: 10px;
+}
+
+.textoIntro h1 {
+	text-align: center;
+}
+
+.textoIntro p {
+	text-align: center;
+	padding: 0 15px 0 15px;
+}
+
+.imgIntro {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.imgIntro img {
+	width: 300px;
+	height: 300px;
+}
+
+/*Incio Serviços*/
+
+#containerServicos {
+	width: 100%;
+	margin-top: -20px;
+	clear: both;
+	background-color: #151515;
+	opacity: 0.85;
+}
+
+.servicos {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.servicos article {
+	width: 300px;
+	height: 260px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border: 1px solid #dccfec;
+	border-radius: 8px;
+	background-color: #fff; 
+}
+
+.servicos h2 {
+	text-align: center;
+	line-height: 25px;
+	
+}
+
+.servicos h1 {
+	color: #fff;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	
+}
+
+.servicos img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.servicos p {
+	text-align: center;
+	padding:  0 20px 0 20px;
+}
+
+
+/*Inicio sobre*/
+
+#containerSobre {
+	width: 100%;
+	
+}
+
+.sobre {
+	width: 100%;
+	padding-top: 20px;
+}
+
+.sobre h1 {
+	text-align: center;
+	line-height: 1;
+	padding-bottom: 10px;
+}
+
+.imgSobre {
+	text-align: center;
+	
+}
+
+.imgSobre img {
+	width: 222px; 
+	height: 228px;
+}
+
+.textoSobre {
+	text-indent: 20px;
+	padding-top: 10px;
+	text-align: justify;
+	margin: 0 auto;
+	font-size: 15px;
+	padding: 15px;
+}
+
+/*listas Habilidades*/
+
+.textoHabilidades {
+	margin: 0 auto;
+	width: 100%;
+}
+
+ .textoHabilidades ul {
+ 	float: left;
+ }
+
+.textoHabilidades ul li {
+	background-image: url(../Img/check.png);
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	padding-bottom: 15px;
+	display: block;
+	list-style: none;
+}
+
+.textoHabilidades h2 {
+	text-align: center;
+}
+
+/*Area como eu trabalho*/
+#containerTrabalho {
+	width: 100%;
+	margin-top: -20px;
+	clear: both;
+	border-top: 1px solid #dccfec;
+}
+
+.conteudoTrabalho {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+
+}
+
+.conteudoTrabalho h1 {
+	text-align: center;
+	
+}
+
+.conteudoTrabalho article {
+	width: 300px;
+	height: 230px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	padding: 5px;
+	text-align: center;
+	border: 1px solid #dccfec;
+	background-color: #F7F7F7;
+	border-radius: 8px;
+
+}
+
+
+.conteudoTrabalho article p {
+	font-size: 16px;
+	text-align: justify;
+	padding: 0 15px 0 15px;
+	text-indent: 15px;
+}
+
+.convercao {
+	width: 100%;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+
+.convercao p {
+	text-align: center;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*caixa de vantagens*/
+
+.empresaMapa, .garantia {
+	width: 330px;
+	height: 260px;
+	text-align: center;
+	border: 1px solid #dccfec;
+	background-color: #F7F7F7;
+	border-radius: 17px;
+	margin: 0 auto;
+}
+
+.empresaMapa p {
+	text-align: center;
+	padding: 0 15px 0 15px;
+}
+
+.empresaMapa img {
+	margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.garantia p {
+	padding: 0 15px 0 15px;
+	text-align: center;
+}
+
+.garantia {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+.pgarantia {
+	color: #EF4C4C;
+	font-size: 34px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 34px;
+	
+}
+
+
+.asterisco {
+	font-size: 13px; 
+}
+
+/*Contato */
+
+#containerContato {
+	width: 100%;
+	border-top: 1px solid #dccfec;
+}
+
+.conteudoContato {
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.conteudoContato p {
+	line-height: 30px;
+}
+
+.conteudoContato h1 {
+	text-align: center;
+}
+
+.email {
+	text-decoration: none;
+	color: #6666ff;
+	font-size: 18px;
+}
+
+.conteudoContato a {
+	background-color: #00b300;
+	border-radius: 7px;
+	border: none;
+	padding: 15px 15px;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/*Botão de ir ao topo*/
+#btnTopo {
+	position: fixed;
+	display: none;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #555555;
+    border: none;
+    text-decoration: none;
+    z-index: 1;
+}
+
+#btnTopo::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    transition: margin-top 250ms;
+}
+
+#btnTopo:hover::after {
+    margin-top:-8px;
+}
+
+
+/*Rodapé*/
+
+#rodape {
+	width: 100%;
+	clear: both;
+	background-color: #151515;
+	opacity: 0.85;
+	
+}
+
+#rodape p {
+	color: #8F8F8F;
+	padding-top: 70px;
+	text-align: center;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
